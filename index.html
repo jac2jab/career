@@ -742,7 +742,7 @@ html.js .rv.in{opacity:1; transform:none}
 <section id="ai" class="rv">
   <div class="eyebrow"><span class="num">07</span><span class="lbl">AI Portfolio</span></div>
   <h2>The current chapter, stated honestly</h2>
-  <p class="lede">Jason has not yet delivered a paid AI enablement engagement — his focused AI work began when Trend Micro ended on <strong>1 October 2025</strong>. What he has instead is <strong>eight AI credentials in the ten months since</strong>, an unbroken run from Google, Microsoft, Wharton, Vanderbilt, and Pearson; one proof of concept partially validated; and a thirty-year enablement track record that transfers directly. <strong>Everything above this section is delivered work. This section is the build in progress, and every item below is labeled for exactly how far it got.</strong></p>
+  <p class="lede">Jason has not yet delivered a paid AI enablement engagement — his focused AI work began when Trend Micro ended on <strong>1 October 2025</strong>. What he has instead is <strong>eight AI credentials in the ten months since</strong>, <strong>two working AI systems published as running code</strong>, and a thirty-year enablement track record that transfers directly. <strong>Everything above this section is client-facing delivered work; everything below is personal portfolio work — built, running, and measured, but built for himself. Each item is labeled for exactly how far it got.</strong></p>
 
   <div class="ai-shell">
     <span class="status-chip">Portfolio in progress · since Oct 2025</span>
@@ -781,26 +781,51 @@ html.js .rv.in{opacity:1; transform:none}
       </div>
     </div>
 
+    <h3 style="font-size:19px; font-weight:640; letter-spacing:-.018em; margin:38px 0 6px">JAB AI Labs — the work itself</h3>
+    <p class="return-note" style="margin-bottom:22px">A public repository of applied AI projects, built hands-on rather than read about. Two systems run end to end today. Both default to a <strong style="color:var(--ink)">local model</strong> — private by design, because the inputs are personal email and customer discovery notes. <a href="https://github.com/jac2jab/JAB-AI-Labs" target="_blank" rel="noopener" style="color:var(--s5); text-decoration:none; border-bottom:1px solid rgba(213,81,129,.45)">github.com/jac2jab/JAB-AI-Labs</a></p>
+
+    <div class="transfer" style="margin-bottom:8px">
+      <div class="tr" style="border-color:rgba(25,158,112,.34)">
+        <p class="trh">MAIOS Daily Brief — v0.4, working</p>
+        <p class="trb" style="font-size:14px; color:var(--ink-2)"><b style="color:var(--s3); font-size:19px">92%</b> reading reduction against an <b style="color:var(--ink)">80% target</b><br>
+          <span style="font-size:12.5px; color:var(--ink-muted)">An inbox becomes one prioritized morning brief: ingest, categorize, score, deduplicate, filter, summarize, render. 1,589 words down to 130. Measured in words, not item counts, because the target is reading <em>time</em>.</span></p>
+      </div>
+      <div class="tr" style="border-color:rgba(213,81,129,.34)">
+        <p class="trh">SE Demo Generator — both stages running</p>
+        <p class="trb" style="font-size:14px; color:var(--ink-2)"><b style="color:var(--ink)">Discovery notes → demo plan</b><br>
+          <span style="font-size:12.5px; color:var(--ink-muted)">Extraction validated May 2026; generation running since August. Produces demo flow, paired executive and technical talk tracks, competitive positioning, and the questions that advance the deal. Detail below.</span></p>
+      </div>
+    </div>
+
+    <div class="why-box" style="border-left-color:var(--s3)">
+      <h4>The engineering judgment is the point, not the output</h4>
+      <p><strong>He diagnosed a metric rather than picking one.</strong> Jaccard similarity was silently killing deduplication because it penalizes length mismatch — a 160-word article and a 70-word write-up of the same story scored 0.24. Switching to the overlap coefficient nearly doubled the separation between true duplicates and false pairs (0.185 vs 0.094), and the threshold was set from that measurement rather than by feel.</p>
+      <p style="margin-top:12px"><strong>And he found out the hard way that prompt-level honesty instructions are not a control.</strong> Run against an empty vendor pack, the model invented an "80% alert volume reduction" and "$X per year" in savings instead of reporting the gap it had been told to report. The fix was a completeness banner <strong>computed in code, not requested from the model</strong>. That is AI governance learned by watching it fail — the applied version of the Wharton course above.</p>
+    </div>
+
     <div class="artifact">
-      <span class="atag">Artifact 01 · May 2026</span>
+      <span class="atag">Artifact 01 · May – Aug 2026</span>
       <h3>SE Demo Generator</h3>
-      <p class="astate">Proof of concept — extraction stage validated, generation stage designed</p>
+      <p class="astate">Both stages running · vendor pack content outstanding</p>
       <p>A demo-preparation copilot for sales engineers. It takes <strong style="color:var(--ink)">raw, messy discovery notes</strong> — the kind an SE actually walks out of a first call with — and turns them into a customer-specific demo strategy, including <strong style="color:var(--ink)">separate executive and technical talk tracks</strong> for the same demo moment, plus competitive positioning and trap questions.</p>
 
       <div class="flow">
         <div class="flow-step"><span class="fs-n">INPUT</span><span class="fs-t">Raw discovery notes</span><span class="fs-d">Unstructured, as actually captured during a live customer call</span></div>
-        <div class="flow-step done"><span class="fs-n">STAGE 01 · VALIDATED</span><span class="fs-t">Extraction &amp; normalization</span><span class="fs-d">Stakeholders, business drivers, pain points, incumbent vendor, competitors, requirements, budget, compliance</span></div>
-        <div class="flow-step"><span class="fs-n">STAGE 02 · DESIGNED</span><span class="fs-t">Customer &amp; opportunity profile</span><span class="fs-d">Structured model of the account and the deal</span></div>
-        <div class="flow-step"><span class="fs-n">STAGE 03 · DESIGNED</span><span class="fs-t">Strategic interpretation</span><span class="fs-d">What are they actually trying to do, why now, who decides, where are we vulnerable</span></div>
-        <div class="flow-step out"><span class="fs-n">OUTPUT · DESIGNED</span><span class="fs-t">Customized demo plan</span><span class="fs-d">Executive talk track · technical talk track · competitive positioning · trap questions · recommended next step</span></div>
+        <div class="flow-step"><span class="fs-n">INPUT</span><span class="fs-t">Raw discovery notes</span><span class="fs-d">Unstructured, as actually captured during a live customer call</span></div>
+        <div class="flow-step done"><span class="fs-n">STAGE 01 · RUNNING</span><span class="fs-t">Extraction &amp; normalization</span><span class="fs-d">Account, pains, stakeholders, competitors, budget and timeline signals, compelling event — plus what it inferred and what is missing</span></div>
+        <div class="flow-step done"><span class="fs-n">STAGE 02 · RUNNING</span><span class="fs-t">Generation</span><span class="fs-d">Opportunity profile + vendor pack. Three grouped model calls, so a partial plan still reaches the user with gaps named</span></div>
+        <div class="flow-step out"><span class="fs-n">OUTPUT</span><span class="fs-t">Demo plan</span><span class="fs-d">Recommended demo flow · executive and technical talk tracks · competitive positioning · questions that advance the deal</span></div>
       </div>
 
-      <p style="font-size:13.5px; color:var(--ink-muted); margin:16px 0 0; line-height:1.55">Tested against a constructed enterprise-security scenario: an incumbent vendor under competitive pressure from two rivals, an emerging AI-agent security requirement, approved budget, and a compliance constraint. <strong style="color:var(--ink-2)">The extraction stage worked.</strong> Everything downstream is specified but not yet built.</p>
+      <p style="font-size:13.5px; color:var(--ink-muted); margin:16px 0 0; line-height:1.55">Extraction validated May 2026; generation running since August 2026. Local model by default (Ollama) because discovery notes carry customer names, budgets, and competitive intelligence — with a hosted API as the alternative and, deliberately, <strong style="color:var(--ink-2)">no offline fallback</strong>: a demo plan generated without a model is a template with the customer's name pasted in, which is worse than an honest failure. <strong style="color:var(--ink-2)">The outstanding work is vendor pack content</strong> — the schema, tooling, and completeness reporting are built; the curated demo flows and competitive positioning are not yet written.</p>
 
       <div class="why-box">
-        <h4>Why this is the right first artifact</h4>
-        <p>It is not a generic AI demo. It automates <strong>the exact bottleneck Jason personally lived through at Nugenesis, Juniper, and Trend Micro</strong> — turning discovery into a demo that lands with two audiences who need entirely different things. The dual talk track is the whole insight, and it is the same translation skill that runs through every section above. Someone who had not spent years in the SE chair would not have designed this one.</p>
+        <h4>Why this is the right artifact for him to have built</h4>
+        <p>It is not a generic AI demo. It automates <strong>the exact bottleneck Jason personally lived through at Nugenesis, Juniper, and Trend Micro</strong> — turning discovery into a demo that lands with two audiences who need entirely different things. The dual talk track is the whole insight, and it is the same translation skill that runs through every section above.</p>
+        <p style="margin-top:12px">His own assessment of where the value sits is the tell: <strong>the generation layer is a commodity</strong> — any curious SE can paste notes into a chatbot and get a competent summary. What no individual SE will do is curate and maintain, across a team, the demo flows that actually win, honest competitive positioning, and POC success criteria. That is organizational knowledge, it decays without an owner, and it walks out the door when a senior SE leaves. <strong>The vendor packs are the moat, and they are the outstanding work.</strong></p>
       </div>
+
+      <p style="font-size:13px; color:var(--ink-muted); margin:16px 0 0; line-height:1.55"><strong style="color:var(--ink-2)">Stated limitations, from the project's own README:</strong> the vendor packs are empty, so output quality is bounded by that; the model invents specifics when the pack is thin; a local model is slow (~4 tokens/second on CPU); there is no UI; and there is no evaluation yet of whether the generated plans are actually any good — judging that needs real discovery notes and a written pack first.</p>
     </div>
 
     <h3 style="font-size:14px; font-weight:660; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-muted); margin:38px 0 4px">What transfers on day one</h3>
@@ -1040,7 +1065,8 @@ var MILES = [
   {x:2023.02, lvl:0, t:"AWS Certified Solutions Architect – Associate", s:"Earned six months into the Trend Micro tenure, while carrying a full cybersecurity portfolio. Cloud architecture — a domain that did not exist when he left the industry.", m:"January 5, 2023 · 6 months in", star:true},
   {x:2023.80, lvl:1, t:"Incident Response Bootcamp", s:"One-week program with Trend Micro IR specialists — attacker tactics, investigation workflows, containment, and executive communication.", m:"Trend Micro"},
   {x:2026.15, lvl:0, t:"Eight AI credentials in ten months", s:"Google, Microsoft, Wharton (UPenn), Vanderbilt, and Pearson/Omar Santos — an unbroken run beginning six weeks after Trend Micro ended. Detail in section 07.", m:"Nov 2025 – Aug 2026", star:true},
-  {x:2026.34, lvl:1, t:"SE Demo Generator — proof of concept", s:"Built and validated the discovery-extraction stage: AI reliably pulling structured opportunity detail out of unstructured discovery notes. The downstream demo-generation chain is designed, not yet built.", m:"May 2026 · in progress", star:true}
+  {x:2026.34, lvl:1, t:"SE Demo Generator — extraction stage running", s:"Discovery notes to structured opportunity profile, validated against a constructed enterprise-security scenario. The generation stage followed in August 2026.", m:"May 2026 · JAB AI Labs", star:true},
+  {x:2026.58, lvl:2, t:"Two AI systems running", s:"MAIOS Daily Brief v0.4 hits 92% reading reduction against an 80% target. SE Demo Generator runs both stages end to end. Both use local models by default; both published on GitHub.", m:"Aug 2026 · JAB AI Labs", star:true}
 ];
 
 function drawTimeline(){
